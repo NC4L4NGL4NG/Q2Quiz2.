@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Club Registration Form</title>
+<script>
+        function redirectToPage() {
+            window.location.href = 'file:///C:/Users/Neriza/Downloads/link.html';
+        }
+    </script>
+    <style>
+        
+        body {
+             font-family: Arial, sans-serif;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: rgb(37,18,125);
+background: linear-gradient(90deg, rgba(37,18,125,1) 34%, rgba(6,104,213,1) 50%, rgba(71,145,212,1) 100%);
+
+    .form-container {
+    background-color: rgba(18, 25, 44, 0.85); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 1550px;
+    backdrop-filter: blur(5px)
+}
+
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #005fa3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+       <form onsubmit="event.preventDefault(); redirectToPage();">
+        <h1>Robotic Club Registration Form</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label>Preferred Robotic Topics</label>
+            <input type="checkbox" id="programming" name="topics" value="Programming">
+            <label for="programming" style="display: inline;">Programming</label><br>
+            <input type="checkbox" id="electronics" name="topics" value="Electronics">
+            <label for="electronics" style="display: inline;">Electronics</label><br>
+            <input type="checkbox" id="mechanical" name="topics" value="Mechanical Design">
+            <label for="mechanical" style="display: inline;">Mechanical Design</label>
+
+            <label>Robotics Experience Level</label>
+            <input type="radio" id="beginner" name="experience" value="Beginner" required>
+            <label for="beginner" style="display: inline;">Beginner</label><br>
+            <input type="radio" id="intermediate" name="experience" value="Intermediate">
+            <label for="intermediate" style="display: inline;">Intermediate</label><br>
+            <input type="radio" id="advanced" name="experience" value="Advanced">
+            <label for="advanced" style="display: inline;">Advanced</label>
+
+            <label for="project">Preferred Robotic Projects</label>
+            <select id="project" name="project">
+                <option value="">Choose a project...</option>
+                <option value="Mural Painting">Drone</option>
+                <option value="Digital Art Design">Robots</option>
+                <option value="Photography Exhibition">Engineering</option>
+            </select>
+
+            <label for="interest">Statement of Interest</label>
+            <textarea id="interest" name="interest" placeholder="Write a brief statement..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+       
+    </div>
+
+</form>
+</body>
+</html>

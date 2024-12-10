@@ -1,0 +1,145 @@
+  /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color:white;
+        }
+
+        /* Background Styling */
+        body {
+    background-color: #00008b;
+    background-image: url('https://media.discordapp.net/attachments/1017751096795607074/1315657511029964821/Untitled1138_20241209203304.png?ex=6758350a&is=6756e38a&hm=e300bfe92b85c39eff40d36699db3606f16dd0de933561bef1cc2acf014622ec&=&format=webp&quality=lossless&width=782&height=521');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f4a261;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #f4a261;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e76f51;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Activities Section */
+        .activities {
+            padding: 50px 20px;
+            background-color: #16213e;
+            text-align: center;
+        }
+
+        .activities h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .activities .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .activities .card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .activities .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .activities .card p {
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
